@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="bg-[#172842] min-h-screen flex justify-center">
-      <div className="bg-[#172842] h-max w-9/10 max-w-[600px] flex flex-col gap-2 p-1.5 border border-white items-start shadow-2xl shadow-black rounded-lg mt-2">
+      <div className="bg-[#172842] h-max w-9/10 max-w-[600px] flex flex-col gap-2 p-1.5 items-start shadow-2xl shadow-black rounded-lg mt-2">
         <div className="flex flex-col justify-center gap-4 w-full p-1.5">
           <h1 className="text-white text-2xl text-center">Manage Your Todos</h1>
           {/* TodoForm */}
