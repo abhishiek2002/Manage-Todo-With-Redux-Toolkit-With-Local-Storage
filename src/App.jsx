@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { initialLocalTodos } from "./features/Todo/todoSlice";
 
 function App() {
-  const todos = useSelector((state) => state.todo.todos);
+  const todos = useSelector((state) => state.todoSlice.todos);
   const dispatch = useDispatch();
   
   
