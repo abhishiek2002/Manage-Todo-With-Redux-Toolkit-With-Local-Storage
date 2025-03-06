@@ -1,8 +1,5 @@
-# React + Vite
+# React Todo Using Redux Toolkit (RTK)
+This is complicated todo project in which I have used `React` and `Redux Toolkit` with `localstorage` (to add todos in storage so that todos do not vanish after refresh page)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Website Link
+To check project, you can go to this link 👉<a href='https://manage-todo-with-redux-toolkit-with-local-storage.vercel.app/'>Project </a>
