@@ -1,21 +1,28 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
+// todos: [{
+//   id: nanoid(),
+//   text: "Hello",
+//   completed: false,
+// },]
+
 export const todoSlice = createSlice({
   name: "todoSlice",
   initialState: {
-    todos: [
-      // {
-      //   id: nanoid(),
-      //   text: "Hello",
-      //   completed: false,
-      // },
-    ],
+    todos: [],
   },
   reducers: {
     addTodo: (state, action) => {
       const todo = { id: nanoid(), text: action.payload, completed: false };
-      state.todos.push(todo);
-      localStorage.setItem("todos", JSON.stringify(state.todos));
+      if (state.todos !== null) {
+        state.todos.push(todo);
+        localStorage.setItem("todos", JSON.stringify(state.todos));
+      }
+      // getting errors in development phase because of push in null array. That's why debugging it
+      else {
+        state.todos = [todo];
+        localStorage.setItem("todos", JSON.stringify(state.todos));
+      }
     },
     updateTodo: (state, action) => {
       state.todos = state.todos.map((todo) =>
